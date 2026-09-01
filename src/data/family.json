@@ -1,0 +1,374 @@
+[
+  {
+    "id": "chief-monica",
+    "name": "Chief Mrs. Monica",
+    "relationship": "Grandmother",
+    "generation": 1,
+    "parentId": null,
+    "photo": "/src/assets/granny.png",
+    "note": "The heart of the family and a source of enduring love and wisdom."
+  },
+  {
+    "id": "angelina",
+    "name": "Angelina",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "deceased": true,
+    "note": ""
+  },
+  {
+    "id": "roland",
+    "name": "Roland",
+    "relationship": "Son",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "deceased": true,
+    "note": ""
+  },
+  {
+    "id": "augustina",
+    "name": "Augustina",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "note": ""
+  },
+  {
+    "id": "victor",
+    "name": "Very Rev. Father Victor (PhD)",
+    "relationship": "Son",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "note": ""
+  },
+  {
+    "id": "mary",
+    "name": "Mary",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "note": ""
+  },
+  {
+    "id": "helen",
+    "name": "Helen",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "note": ""
+  },
+  {
+    "id": "lucy",
+    "name": "Lucy",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "deceased": true,
+    "note": ""
+  },
+  {
+    "id": "gladys",
+    "name": "Gladys",
+    "relationship": "Daughter",
+    "generation": 2,
+    "parentId": "chief-monica",
+    "note": ""
+  },
+  {
+    "id": "timipere",
+    "name": "Timipere",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "angelina",
+    "note": "Daughter of Angelina • [To be confirmed]"
+  },
+  {
+    "id": "bright",
+    "name": "Bright",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "angelina",
+    "note": "Son of Angelina • [To be confirmed]"
+  },
+  {
+    "id": "michael",
+    "name": "Michael",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "angelina",
+    "note": "Deceased • Son of Angelina"
+  },
+  {
+    "id": "kenneth",
+    "name": "Kenneth",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Son of Roland • [To be confirmed]"
+  },
+  {
+    "id": "edmund",
+    "name": "Edmund",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Son of Roland • [To be confirmed]"
+  },
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Son of Roland • [To be confirmed]"
+  },
+  {
+    "id": "etaremi",
+    "name": "Etaremi",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Son of Roland • [To be confirmed]"
+  },
+  {
+    "id": "franca",
+    "name": "Franca",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Daughter of Roland • [To be confirmed]"
+  },
+  {
+    "id": "felix",
+    "name": "Felix",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "roland",
+    "note": "Son of Roland • [To be confirmed]"
+  },
+  {
+    "id": "elizabeth",
+    "name": "Elizabeth",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "augustina",
+    "note": "Daughter of Augustina • [To be confirmed]"
+  },
+  {
+    "id": "lilian",
+    "name": "Lilian",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "augustina",
+    "note": "Daughter of Augustina • [To be confirmed]"
+  },
+  {
+    "id": "nicholas",
+    "name": "Nicholas",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "augustina",
+    "note": "Son of Augustina • [To be confirmed]"
+  },
+  {
+    "id": "poweide",
+    "name": "Poweide",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "mary",
+    "note": "Son of Mary • [To be confirmed]"
+  },
+  {
+    "id": "freda",
+    "name": "Freda",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Daughter of Helen • [To be confirmed]"
+  },
+  {
+    "id": "petra",
+    "name": "Petra",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Daughter of Helen • [To be confirmed]"
+  },
+  {
+    "id": "believe",
+    "name": "Believe",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Daughter of Helen • [To be confirmed]"
+  },
+  {
+    "id": "yerin",
+    "name": "Yerin",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "lucy",
+    "note": "Son of Lucy • [To be confirmed]"
+  },
+  {
+    "id": "vivian",
+    "name": "Vivian",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "gladys",
+    "note": "Daughter of Gladys • [To be confirmed]"
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "gladys",
+    "note": "Son of Gladys • [To be confirmed]"
+  },
+  {
+    "id": "leader",
+    "name": "Leader",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "gladys",
+    "note": "Son of Gladys • [To be confirmed]"
+  },
+  {
+    "id": "owei-ere",
+    "name": "Owei-ere",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "gladys",
+    "note": "Daughter of Gladys • [To be confirmed]"
+  },
+  {
+    "id": "jennifer",
+    "name": "Jennifer",
+    "relationship": "Great-Granddaughter",
+    "generation": 4,
+    "parentId": "timipere",
+    "note": "Daughter of Timipere • [To be confirmed]"
+  },
+  {
+    "id": "cryan",
+    "name": "Cryan",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "timipere",
+    "note": "Son of Timipere • [To be confirmed]"
+  },
+  {
+    "id": "denyefa",
+    "name": "Denyefa",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "timipere",
+    "note": "Son of Timipere • [To be confirmed]"
+  },
+  {
+    "id": "ayibanua",
+    "name": "Ayibanua",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "timipere",
+    "note": "Son of Timipere • [To be confirmed]"
+  },
+  {
+    "id": "regina",
+    "name": "Regina",
+    "relationship": "Great-Granddaughter",
+    "generation": 4,
+    "parentId": "kenneth",
+    "note": "Daughter of Kenneth • [To be confirmed]"
+  },
+  {
+    "id": "israel",
+    "name": "Israel",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "kenneth",
+    "note": "Son of Kenneth • [To be confirmed]"
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "kenneth",
+    "note": "Son of Kenneth • [To be confirmed]"
+  },
+  {
+    "id": "vanessa",
+    "name": "Vanessa",
+    "relationship": "Great-Granddaughter",
+    "generation": 4,
+    "parentId": "kenneth",
+    "note": "Daughter of Kenneth • [To be confirmed]"
+  },
+  {
+    "id": "ebipade",
+    "name": "Ebipade",
+    "relationship": "Great-Granddaughter",
+    "generation": 4,
+    "parentId": "andrew",
+    "note": "Daughter of Andrew • [To be confirmed]"
+  },
+  {
+    "id": "john",
+    "name": "John",
+    "relationship": "Great-Grandson",
+    "generation": 4,
+    "parentId": "etaremi",
+    "note": "Son of Etaremi • [To be confirmed]"
+  },
+  {
+    "id": "felix-child-1",
+    "name": "[Child 1]",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "felix",
+    "note": "Child of Felix • [To be confirmed]"
+  },
+  {
+    "id": "felix-child-2",
+    "name": "[Child 2]",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "felix",
+    "note": "Child of Felix • [To be confirmed]"
+  },
+  {
+    "id": "elizabeth-child-1",
+    "name": "[Child 1]",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "elizabeth",
+    "note": "Child of Elizabeth • [To be confirmed]"
+  },
+  {
+    "id": "elizabeth-child-2",
+    "name": "[Child 2]",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "elizabeth",
+    "note": "Child of Elizabeth • [To be confirmed]"
+  },
+  {
+    "id": "lilian-child-1",
+    "name": "[Child 1]",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "lilian",
+    "note": "Child of Lilian • [To be confirmed]"
+  },
+  {
+    "id": "boby",
+    "name": "Boby",
+    "relationship": "Great-Great-Grandson",
+    "generation": 5,
+    "parentId": "jennifer",
+    "note": "Son of Jennifer • [To be confirmed]"
+  }
+]
