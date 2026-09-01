@@ -147,6 +147,8 @@ export default function PublicMemorialPage() {
     </header>
   )
 
+  const ageInYears = memorialProfile.passingYear - memorialProfile.birthYear
+
   const renderFooter = () => (
     <footer className="memorial-footer">
       <div className="footer-simple-row">
@@ -174,6 +176,17 @@ export default function PublicMemorialPage() {
             <p className="hero-subtitle">
               {memorialProfile.birthYear} — {memorialProfile.passingYear}
             </p>
+
+            <div className="hero-age-card" aria-label={`Her age at passing was ${ageInYears} years`}>
+              <div className="hero-age-ring">
+                <span>{ageInYears}</span>
+              </div>
+              <div className="hero-age-copy">
+                <p className="hero-age-label">Years of life</p>
+                <p className="hero-age-text">A life shaped by faith, family, and grace.</p>
+              </div>
+            </div>
+
             <p>{memorialProfile.heroDescription}</p>
             <div className="hero-actions">
               <button type="button" className="primary-btn" onClick={() => handleNavigate('biography')}>Read her biography</button>
