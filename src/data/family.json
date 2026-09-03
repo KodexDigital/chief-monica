@@ -5,7 +5,7 @@
     "relationship": "Grandmother",
     "generation": 1,
     "parentId": null,
-    "photo": "../src/assets/granny.png",
+    "photo": "src/assets/granny.png",
     "note": "The heart of the family and a source of enduring love and wisdom."
   },
   {
