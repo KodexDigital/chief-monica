@@ -41,7 +41,7 @@
     "relationship": "Son",
     "generation": 2,
     "parentId": "chief-monica",
-    "photo":"../src/assets/family_tree/rev.jpg",
+    "photo":"images/family_tree/rev.jpg",
     "note": ""
   },
   {
@@ -83,7 +83,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "angelina",
-    "photo":"../src/assets/family_tree/timipere.jpg",
+    "photo":"images/family_tree/timipere.jpg",
     "note": "Daughter of Angelina"
   },
   {
@@ -92,7 +92,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "angelina",
-    "photo":"../src/assets/family_tree/bright.png",
+    "photo":"images/family_tree/bright.png",
     "note": "Son of Angelina"
   },
   {
@@ -101,7 +101,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/kenneth.jpg",
+    "photo":"images/family_tree/kenneth.jpg",
     "note": "Son of Roland"
   },
   {
@@ -110,7 +110,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/edmund.jpg",
+    "photo":"images/family_tree/edmund.jpg",
     "note": "Son of Roland"
   },
   {
@@ -119,7 +119,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/andrew.jpg",
+    "photo":"images/family_tree/andrew.jpg",
     "note": "Son of Roland"
   },
   {
@@ -128,7 +128,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/femi.jpg",
+    "photo":"images/family_tree/femi.jpg",
     "note": "Son of Roland"
   },
   {
@@ -137,7 +137,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/franca.jpg",
+    "photo":"images/family_tree/franca.jpg",
     "note": "Daughter of Roland"
   },
   {
@@ -146,7 +146,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "photo":"../src/assets/family_tree/felix.jpg",
+    "photo":"images/family_tree/felix.jpg",
     "note": "Son of Roland"
   },
   {
@@ -163,7 +163,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "augustina",
-    "photo":"../src/assets/family_tree/lilian.jpg",
+    "photo":"images/family_tree/lilian.jpg",
     "note": "Daughter of Augustina"
   },
   {
@@ -188,7 +188,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "helen",
-    "photo":"../src/assets/family_tree/freda.jpg",
+    "photo":"images/family_tree/freda.jpg",
     "note": "Daughter of Helen"
   },
   {
@@ -301,7 +301,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "timipere",
-    "photo":"../src/assets/family_tree/jennifer.jpg",
+    "photo":"images/family_tree/jennifer.jpg",
     "note": "Daughter of Timipere"
   },
   {
@@ -310,7 +310,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "photo":"../src/assets/family_tree/tubos.jpg",
+    "photo":"images/family_tree/tubos.jpg",
     "note": "Son of Timipere"
   },
   {
@@ -319,7 +319,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "photo":"../src/assets/family_tree/denyefa.jpg",
+    "photo":"images/family_tree/denyefa.jpg",
     "note": "Son of Timipere"
   },
   {
@@ -328,7 +328,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "photo":"../src/assets/family_tree/ayibanua.jpg",
+    "photo":"images/family_tree/ayibanua.jpg",
     "note": "Son of Timipere"
   },
   {
@@ -361,7 +361,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "kenneth",
-    "photo":"../src/assets/family_tree/regina.jpg",
+    "photo":"images/family_tree/regina.jpg",
     "note": "Daughter of Kenneth"
   },
   {
@@ -370,7 +370,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "kenneth",
-    "photo":"../src/assets/family_tree/israel.jpg",
+    "photo":"images/family_tree/israel.jpg",
     "note": "Son of Kenneth"
   },
   {
@@ -379,7 +379,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "kenneth",
-    "photo":"../src/assets/family_tree/joshua.jpg",
+    "photo":"images/family_tree/joshua.jpg",
     "note": "Son of Kenneth"
   },
   {
@@ -388,7 +388,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "kenneth",
-    "photo":"../src/assets/family_tree/vanessa.jpg",
+    "photo":"images/family_tree/vanessa.jpg",
     "note": "Daughter of Kenneth"
   },
   {
@@ -397,7 +397,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "andrew",
-    "photo":"../src/assets/family_tree/andrew_daughter.jpg",
+    "photo":"images/family_tree/andrew_daughter.jpg",
     "note": "Daughter of Andrew"
   },
   {
@@ -462,7 +462,7 @@
     "relationship": "Great-Great-Grandson",
     "generation": 5,
     "parentId": "jennifer",
-    "photo":"../src/assets/family_tree/jenifa_son.jpg",
+    "photo":"images/family_tree/jenifa_son.jpg",
     "note": "Son of Jennifer"
   }
 ]
