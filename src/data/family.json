@@ -50,6 +50,7 @@
     "relationship": "Daughter",
     "generation": 2,
     "parentId": "chief-monica",
+    "photo":"images/family_tree/mary.jpg",
     "note": ""
   },
   {
@@ -67,6 +68,7 @@
     "generation": 2,
     "parentId": "chief-monica",
     "deceased": true,
+    "photo":"images/family_tree/lucy.jpg",
     "note": ""
   },
   {
@@ -155,7 +157,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "augustina",
-    "note": "Daughter of Augustina • [To be confirmed]"
+    "note": "Daughter of Augustina"
   },
   {
     "id": "lilian",
@@ -172,7 +174,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "augustina",
-    "note": "Son of Augustina • [To be confirmed]"
+    "note": "Son of Augustina"
   },
   {
     "id": "poweide",
@@ -180,7 +182,43 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "mary",
-    "note": "Son of Mary • [To be confirmed]"
+    "photo":"images/family_tree/poweide.jpg",
+    "note": "Son of Mary"
+  },
+  {
+    "id": "bibowei",
+    "name": "Bibo-owei",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "mary",
+    "note": "Son of Mary"
+  },
+  {
+    "id": "pere_ere",
+    "name": "Pere-ere",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "mary",
+    "photo":"images/family_tree/pere-ere.jpg",
+    "note": "Daughter of Mary"
+  },
+  {
+    "id": "layefa",
+    "name": "Tamaralayefa",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "mary",
+    "photo":"images/family_tree/layefa.jpg",
+    "note": "Daughter of Mary"
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "mary",
+    "photo":"images/family_tree/david.jpg",
+    "note": "Son of Mary"
   },
   {
     "id": "freda",
@@ -197,7 +235,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "helen",
-    "note": "Daughter of Helen • [To be confirmed]"
+    "note": "Daughter of Helen"
   },
   {
     "id": "believe",
@@ -205,7 +243,8 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "helen",
-    "note": "Daughter of Helen • [To be confirmed]"
+    "photo":"images/family_tree/believe.jpg",
+    "note": "Daughter of Helen"
   },
   {
     "id": "sonia",
@@ -229,6 +268,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "helen",
+    "photo":"images/family_tree/desmond.jpg",
     "note": "Son of Helen"
   },
   {
@@ -237,15 +277,15 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "lucy",
-    "note": "Son of Lucy • [To be confirmed]"
+    "note": "Son of Lucy"
   },
   {
-    "id": "fostina",
-    "name": "Fostina",
+    "id": "faustina",
+    "name": "Faustina",
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "lucy",
-    "note": "Daughter of Lucy • [To be confirmed]"
+    "note": "Daughter of Lucy"
   },
   {
     "id": "celestina",
@@ -253,7 +293,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "lucy",
-    "note": "Daughter of Lucy • [To be confirmed]"
+    "note": "Daughter of Lucy"
   },
   {
     "id": "vivian",
@@ -261,7 +301,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "gladys",
-    "note": "Daughter of Gladys • [To be confirmed]"
+    "note": "Daughter of Gladys"
   },
   {
     "id": "genevieve",
@@ -269,7 +309,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "gladys",
-    "note": "Daughter of Gladys • [To be confirmed]"
+    "note": "Daughter of Gladys"
   },
   {
     "id": "sunny",
@@ -277,7 +317,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "gladys",
-    "note": "Son of Gladys • [To be confirmed]"
+    "note": "Son of Gladys"
   },
   {
     "id": "leader",
@@ -285,7 +325,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "gladys",
-    "note": "Son of Gladys • [To be confirmed]"
+    "note": "Son of Gladys"
   },
   {
     "id": "owei-ere",
@@ -293,7 +333,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "gladys",
-    "note": "Daughter of Gladys • [To be confirmed]"
+    "note": "Daughter of Gladys"
   },
   {
     "id": "jennifer",
@@ -337,7 +377,7 @@
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "bright",
-    "note": "Child of Bright • [To be confirmed]"
+    "note": "Child of Bright"
   },
   {
     "id": "brigh-child-2",
@@ -345,7 +385,7 @@
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "bright",
-    "note": "Child of Bright • [To be confirmed]"
+    "note": "Child of Bright"
   },
   {
     "id": "brigh-child-3",
@@ -353,7 +393,7 @@
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "bright",
-    "note": "Child of Bright • [To be confirmed]"
+    "note": "Child of Bright"
   },
   {
     "id": "regina",
@@ -406,7 +446,7 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "etaremi",
-    "note": "Son of Etaremi • [To be confirmed]"
+    "note": "Son of Etaremi"
   },
   {
     "id": "felix-child-1",
@@ -414,7 +454,7 @@
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "felix",
-    "note": "Child of Felix • [To be confirmed]"
+    "note": "Child of Felix"
   },
   {
     "id": "felix-child-2",
@@ -422,7 +462,7 @@
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "felix",
-    "note": "Child of Felix • [To be confirmed]"
+    "note": "Child of Felix"
   },
   {
     "id": "elizabeth-child-1",
@@ -454,6 +494,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "freda",
+    "photo":"images/family_tree/jasmine.jpg",
     "note": "Daughter of Freda"
   },
   {
