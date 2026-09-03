@@ -5,7 +5,7 @@
     "relationship": "Grandmother",
     "generation": 1,
     "parentId": null,
-    "photo": "/src/assets/granny.png",
+    "photo": "../src/assets/granny.png",
     "note": "The heart of the family and a source of enduring love and wisdom."
   },
   {
@@ -32,6 +32,7 @@
     "relationship": "Daughter",
     "generation": 2,
     "parentId": "chief-monica",
+    "photo": "../src/assets/family_tree/augustina.jpg",
     "note": ""
   },
   {
@@ -40,6 +41,7 @@
     "relationship": "Son",
     "generation": 2,
     "parentId": "chief-monica",
+    "photo":"../src/assets/family_tree/rev.jpg",
     "note": ""
   },
   {
@@ -81,7 +83,8 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "angelina",
-    "note": "Daughter of Angelina • [To be confirmed]"
+    "photo":"../src/assets/family_tree/timipere.jpg",
+    "note": "Daughter of Angelina"
   },
   {
     "id": "bright",
@@ -89,15 +92,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "angelina",
-    "note": "Son of Angelina • [To be confirmed]"
-  },
-  {
-    "id": "michael",
-    "name": "Michael",
-    "relationship": "Grandson",
-    "generation": 3,
-    "parentId": "angelina",
-    "note": "Deceased • Son of Angelina"
+    "photo":"../src/assets/family_tree/bright.png",
+    "note": "Son of Angelina"
   },
   {
     "id": "kenneth",
@@ -105,7 +101,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "note": "Son of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/kenneth.jpg",
+    "note": "Son of Roland"
   },
   {
     "id": "edmund",
@@ -113,7 +110,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "note": "Son of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/edmund.jpg",
+    "note": "Son of Roland"
   },
   {
     "id": "andrew",
@@ -121,7 +119,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "note": "Son of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/andrew.jpg",
+    "note": "Son of Roland"
   },
   {
     "id": "etaremi",
@@ -129,7 +128,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "note": "Son of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/femi.jpg",
+    "note": "Son of Roland"
   },
   {
     "id": "franca",
@@ -137,7 +137,8 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "roland",
-    "note": "Daughter of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/franca.jpg",
+    "note": "Daughter of Roland"
   },
   {
     "id": "felix",
@@ -145,7 +146,8 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "roland",
-    "note": "Son of Roland • [To be confirmed]"
+    "photo":"../src/assets/family_tree/felix.jpg",
+    "note": "Son of Roland"
   },
   {
     "id": "elizabeth",
@@ -161,7 +163,8 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "augustina",
-    "note": "Daughter of Augustina • [To be confirmed]"
+    "photo":"../src/assets/family_tree/lilian.jpg",
+    "note": "Daughter of Augustina"
   },
   {
     "id": "nicholas",
@@ -185,7 +188,8 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "helen",
-    "note": "Daughter of Helen • [To be confirmed]"
+    "photo":"../src/assets/family_tree/freda.jpg",
+    "note": "Daughter of Helen"
   },
   {
     "id": "petra",
@@ -204,6 +208,30 @@
     "note": "Daughter of Helen • [To be confirmed]"
   },
   {
+    "id": "sonia",
+    "name": "Sonia",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Daughter of Helen"
+  },
+  {
+    "id": "harriet",
+    "name": "Harriet",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Daughter of Helen"
+  },
+  {
+    "id": "desmond",
+    "name": "Desmond",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "helen",
+    "note": "Son of Helen"
+  },
+  {
     "id": "yerin",
     "name": "Yerin",
     "relationship": "Grandson",
@@ -212,8 +240,32 @@
     "note": "Son of Lucy • [To be confirmed]"
   },
   {
+    "id": "fostina",
+    "name": "Fostina",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "lucy",
+    "note": "Daughter of Lucy • [To be confirmed]"
+  },
+  {
+    "id": "celestina",
+    "name": "Celestina",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "lucy",
+    "note": "Daughter of Lucy • [To be confirmed]"
+  },
+  {
     "id": "vivian",
     "name": "Vivian",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "gladys",
+    "note": "Daughter of Gladys • [To be confirmed]"
+  },
+  {
+    "id": "genevieve",
+    "name": "Genevieve",
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "gladys",
@@ -249,23 +301,26 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "timipere",
-    "note": "Daughter of Timipere • [To be confirmed]"
+    "photo":"../src/assets/family_tree/jennifer.jpg",
+    "note": "Daughter of Timipere"
   },
   {
-    "id": "cryan",
-    "name": "Cryan",
+    "id": "tubos",
+    "name": "Kieran (Tubos)",
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "note": "Son of Timipere • [To be confirmed]"
+    "photo":"../src/assets/family_tree/tubos.jpg",
+    "note": "Son of Timipere"
   },
   {
     "id": "denyefa",
-    "name": "Denyefa",
+    "name": "Tamaradenyefa",
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "note": "Son of Timipere • [To be confirmed]"
+    "photo":"../src/assets/family_tree/denyefa.jpg",
+    "note": "Son of Timipere"
   },
   {
     "id": "ayibanua",
@@ -273,7 +328,32 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "timipere",
-    "note": "Son of Timipere • [To be confirmed]"
+    "photo":"../src/assets/family_tree/ayibanua.jpg",
+    "note": "Son of Timipere"
+  },
+  {
+    "id": "brigh-child-1",
+    "name": "Child 1",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "bright",
+    "note": "Child of Bright • [To be confirmed]"
+  },
+  {
+    "id": "brigh-child-2",
+    "name": "Child 2",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "bright",
+    "note": "Child of Bright • [To be confirmed]"
+  },
+  {
+    "id": "brigh-child-3",
+    "name": "Child 3",
+    "relationship": "Great-Grandchild",
+    "generation": 4,
+    "parentId": "bright",
+    "note": "Child of Bright • [To be confirmed]"
   },
   {
     "id": "regina",
@@ -281,7 +361,8 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "kenneth",
-    "note": "Daughter of Kenneth • [To be confirmed]"
+    "photo":"../src/assets/family_tree/regina.jpg",
+    "note": "Daughter of Kenneth"
   },
   {
     "id": "israel",
@@ -289,7 +370,8 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "kenneth",
-    "note": "Son of Kenneth • [To be confirmed]"
+    "photo":"../src/assets/family_tree/israel.jpg",
+    "note": "Son of Kenneth"
   },
   {
     "id": "joshua",
@@ -297,7 +379,8 @@
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "kenneth",
-    "note": "Son of Kenneth • [To be confirmed]"
+    "photo":"../src/assets/family_tree/joshua.jpg",
+    "note": "Son of Kenneth"
   },
   {
     "id": "vanessa",
@@ -305,7 +388,8 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "kenneth",
-    "note": "Daughter of Kenneth • [To be confirmed]"
+    "photo":"../src/assets/family_tree/vanessa.jpg",
+    "note": "Daughter of Kenneth"
   },
   {
     "id": "ebipade",
@@ -313,7 +397,8 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "andrew",
-    "note": "Daughter of Andrew • [To be confirmed]"
+    "photo":"../src/assets/family_tree/andrew_daughter.jpg",
+    "note": "Daughter of Andrew"
   },
   {
     "id": "john",
@@ -341,34 +426,43 @@
   },
   {
     "id": "elizabeth-child-1",
-    "name": "[Child 1]",
-    "relationship": "Great-Grandchild",
+    "name": "Blessing",
+    "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "elizabeth",
-    "note": "Child of Elizabeth • [To be confirmed]"
+    "note": "Daughter of Elizabeth"
   },
   {
     "id": "elizabeth-child-2",
-    "name": "[Child 2]",
-    "relationship": "Great-Grandchild",
+    "name": "Favour",
+    "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "elizabeth",
-    "note": "Child of Elizabeth • [To be confirmed]"
+    "note": "Daughter of Elizabeth"
   },
   {
     "id": "lilian-child-1",
-    "name": "[Child 1]",
-    "relationship": "Great-Grandchild",
+    "name": "Denisa",
+    "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "lilian",
-    "note": "Child of Lilian • [To be confirmed]"
+    "note": "Daughter of Lilian"
   },
   {
-    "id": "boby",
-    "name": "Boby",
+    "id": "jasmine",
+    "name": "Jasmine",
+    "relationship": "Great-Granddaughter",
+    "generation": 4,
+    "parentId": "freda",
+    "note": "Daughter of Freda"
+  },
+  {
+    "id": "nicko",
+    "name": "Nicko",
     "relationship": "Great-Great-Grandson",
     "generation": 5,
     "parentId": "jennifer",
-    "note": "Son of Jennifer • [To be confirmed]"
+    "photo":"../src/assets/family_tree/jenifa_son.jpg",
+    "note": "Son of Jennifer"
   }
 ]

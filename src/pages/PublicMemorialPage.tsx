@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import heroImage from '../assets/granny.png'
 import { familyMembers, memorialProfile, navigation } from '../data/memorialData'
+import { memoryGallery } from '../data/memories'
 import type { GalleryItem } from '../types/memorial'
 
 interface SectionHeaderProps {
@@ -147,6 +148,8 @@ export default function PublicMemorialPage() {
     </header>
   )
 
+  const ageInYears = memorialProfile.passingYear - memorialProfile.birthYear
+
   const renderFooter = () => (
     <footer className="memorial-footer">
       <div className="footer-simple-row">
@@ -174,6 +177,17 @@ export default function PublicMemorialPage() {
             <p className="hero-subtitle">
               {memorialProfile.birthYear} — {memorialProfile.passingYear}
             </p>
+
+            <div className="hero-age-card" aria-label={`Her age at passing was ${ageInYears} years`}>
+              <div className="hero-age-ring">
+                <span>{ageInYears}</span>
+              </div>
+              <div className="hero-age-copy">
+                <p className="hero-age-label">Years of life</p>
+                <p className="hero-age-text">A life shaped by faith, family, and grace.</p>
+              </div>
+            </div>
+
             <p>{memorialProfile.heroDescription}</p>
             <div className="hero-actions">
               <button type="button" className="primary-btn" onClick={() => handleNavigate('biography')}>Read her biography</button>
@@ -353,33 +367,6 @@ export default function PublicMemorialPage() {
           </div>
         </section>
 
-        <section className="gallery-section" data-reveal>
-          <SectionHeader eyebrow="Family archive" title="Moments remembered with love" />
-          <div className="gallery-grid">
-            {memorialProfile.gallery.map((item) => (
-              <article key={item.title} className="gallery-card">
-                <button
-                  type="button"
-                  className="gallery-trigger"
-                  onClick={() => setSelectedImage(item)}
-                  aria-label={`Open image for ${item.title}`}
-                >
-                  <div
-                    className="gallery-image"
-                    style={{
-                      backgroundImage: `linear-gradient(180deg, rgba(11, 13, 15, 0.08), rgba(11, 13, 15, 0.82)), url('${item.image}')`,
-                    }}
-                  />
-                </button>
-                <div className="gallery-content">
-                  <h4>{item.title}</h4>
-                  <p>{item.caption}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="family-section" data-reveal>
           <SectionHeader eyebrow="Family values" title="The pillars she left behind" />
           <div className="family-grid">
@@ -516,7 +503,7 @@ export default function PublicMemorialPage() {
         </section>
 
         <div className="gallery-grid full-gallery-grid">
-          {memorialProfile.gallery.map((item) => (
+          {[...memorialProfile.gallery, ...memoryGallery].map((item) => (
             <article key={item.title} className="gallery-card gallery-view-card">
               <button
                 type="button"
@@ -562,6 +549,33 @@ export default function PublicMemorialPage() {
             </article>
           ))}
         </div>
+
+        <section className="gallery-section memories-gallery" data-reveal>
+          <SectionHeader eyebrow="Family archive" title="Memories held close" />
+          <div className="gallery-grid">
+            {memoryGallery.map((item) => (
+              <article key={item.title} className="gallery-card">
+                <button
+                  type="button"
+                  className="gallery-trigger"
+                  onClick={() => setSelectedImage(item)}
+                  aria-label={`Open image for ${item.title}`}
+                >
+                  <div
+                    className="gallery-image"
+                    style={{
+                      backgroundImage: `linear-gradient(180deg, rgba(11, 13, 15, 0.08), rgba(11, 13, 15, 0.82)), url('${item.image}')`,
+                    }}
+                  />
+                </button>
+                <div className="gallery-content">
+                  <h4>{item.title}</h4>
+                  <p>{item.caption}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <div className="tribute-panel memorial-tribute-panel">
           <SectionHeader eyebrow="Tributes" title="Messages of love" />
