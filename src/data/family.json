@@ -441,8 +441,8 @@
     "note": "Daughter of Andrew"
   },
   {
-    "id": "john",
-    "name": "John",
+    "id": "jordan",
+    "name": "Jordan",
     "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "etaremi",
@@ -450,19 +450,19 @@
   },
   {
     "id": "felix-child-1",
-    "name": "[Child 1]",
+    "name": "Heli",
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "felix",
-    "note": "Child of Felix"
+    "note": "Daughter of Felix"
   },
   {
     "id": "felix-child-2",
-    "name": "[Child 2]",
+    "name": "Tamarakuro",
     "relationship": "Great-Grandchild",
     "generation": 4,
     "parentId": "felix",
-    "note": "Child of Felix"
+    "note": "Son of Felix"
   },
   {
     "id": "elizabeth-child-1",
