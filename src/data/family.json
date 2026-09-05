@@ -81,7 +81,7 @@
   },
   {
     "id": "timipere",
-    "name": "Timipere",
+    "name": "Timipre",
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "angelina",
@@ -342,7 +342,7 @@
     "generation": 4,
     "parentId": "timipere",
     "photo":"images/family_tree/jennifer.jpg",
-    "note": "Daughter of Timipere"
+    "note": "Daughter of Timipre"
   },
   {
     "id": "tubos",
@@ -351,7 +351,7 @@
     "generation": 4,
     "parentId": "timipere",
     "photo":"images/family_tree/tubos.jpg",
-    "note": "Son of Timipere"
+    "note": "Son of Timipre"
   },
   {
     "id": "denyefa",
@@ -360,7 +360,7 @@
     "generation": 4,
     "parentId": "timipere",
     "photo":"images/family_tree/denyefa.jpg",
-    "note": "Son of Timipere"
+    "note": "Son of Timipre"
   },
   {
     "id": "ayibanua",
@@ -369,7 +369,7 @@
     "generation": 4,
     "parentId": "timipere",
     "photo":"images/family_tree/ayibanua.jpg",
-    "note": "Son of Timipere"
+    "note": "Son of Timipre"
   },
   {
     "id": "brigh-child-1",
