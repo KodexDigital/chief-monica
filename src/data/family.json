@@ -157,6 +157,7 @@
     "relationship": "Granddaughter",
     "generation": 3,
     "parentId": "augustina",
+    "photo":"images/family_tree/elizabeth.jpg",
     "note": "Daughter of Augustina"
   },
   {
@@ -174,7 +175,44 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "augustina",
+    "photo":"images/family_tree/nicholas.jpg",
     "note": "Son of Augustina"
+  },
+  {
+    "id": "bakeere",
+    "name": "Bake-ere",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "augustina",
+    "photo":"images/family_tree/beke-ere.jpg",
+    "note": "Daughter of Augustina"
+  },
+  {
+    "id": "glory",
+    "name": "Glory",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "augustina",
+    "photo":"images/family_tree/glory.jpg",
+    "note": "Daughter of Augustina"
+  },
+  {
+    "id": "emmanuel",
+    "name": "Emmanuel",
+    "relationship": "Grandson",
+    "generation": 3,
+    "parentId": "augustina",
+    "photo":"images/family_tree/emmanuel.jpg",
+    "note": "Son of Augustina"
+  },
+  {
+    "id": "emmanuela",
+    "name": "Emmanuela",
+    "relationship": "Granddaughter",
+    "generation": 3,
+    "parentId": "augustina",
+    "photo":"images/family_tree/emmanuela.jpg",
+    "note": "Daughter of Augustina"
   },
   {
     "id": "poweide",
@@ -471,6 +509,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "elizabeth",
+    "photo":"images/family_tree/blessing.jpg",
     "note": "Daughter of Elizabeth"
   },
   {
@@ -479,6 +518,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "elizabeth",
+    "photo":"images/family_tree/favour.jpg",
     "note": "Daughter of Elizabeth"
   },
   {
@@ -487,6 +527,7 @@
     "relationship": "Great-Granddaughter",
     "generation": 4,
     "parentId": "lilian",
+    "photo":"images/family_tree/denisa.jpg",
     "note": "Daughter of Lilian"
   },
   {
