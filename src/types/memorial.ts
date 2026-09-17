@@ -50,8 +50,6 @@ export interface MemorialProfile {
   title: string
   fullName: string
   shortName: string
-  birthYear: number
-  passingYear: number
   quote: string
   heroDescription: string
   intro: string
