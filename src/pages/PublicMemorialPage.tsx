@@ -148,14 +148,12 @@ export default function PublicMemorialPage() {
     </header>
   )
 
-  const ageInYears = memorialProfile.passingYear - memorialProfile.birthYear
-
   const renderFooter = () => (
     <footer className="memorial-footer">
       <div className="footer-simple-row">
         <div className="footer-simple-copy">
           <p>
-            © {memorialProfile.birthYear}-{memorialProfile.passingYear}, {memorialProfile.fullName}. This memorial is dedicated to preserving her life, legacy, and love.
+            {memorialProfile.fullName}. This memorial is dedicated to preserving her life, legacy, and love.
           </p>
           <p>
             This site is protected by respect, remembrance, and family devotion. All content is intended to honour her memory with care.
@@ -174,14 +172,8 @@ export default function PublicMemorialPage() {
           <div className="hero-copy">
             <p className="eyebrow elegant">In loving memory of</p>
             <h2>{memorialProfile.fullName}</h2>
-            <p className="hero-subtitle">
-              {memorialProfile.birthYear} — {memorialProfile.passingYear}
-            </p>
 
-            <div className="hero-age-card" aria-label={`Her age at passing was ${ageInYears} years`}>
-              <div className="hero-age-ring">
-                <span>{ageInYears}</span>
-              </div>
+            <div className="hero-age-card" aria-label={`Her age at passing was great years`}>
               <div className="hero-age-copy">
                 <p className="hero-age-label">Years of life</p>
                 <p className="hero-age-text">A life shaped by faith, family, and grace.</p>

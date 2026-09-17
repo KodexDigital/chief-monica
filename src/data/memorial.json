@@ -2,8 +2,6 @@
   "title": "Chief Mrs. Monica",
   "fullName": "Chief Mrs. Monica Edumongren Zisine Otoro",
   "shortName": "Chief Mrs. Monica",
-  "birthYear": 1941,
-  "passingYear": 2026,
   "quote": "Her love was gentle, her wisdom profound, and her memory still leads us home.",
   "heroDescription": "Her memory continues to shine in the hearts of her family and community. We remember her for the love, grace, strength, and faith that shaped her life and comforted all who knew her.",
   "intro": "Her story is one of resilience, sacrifice, and enduring Christian character. Through marriage, family life, industry, and service to others, she became a beloved matriarch whose legacy continues to live in the hearts of her children, grandchildren, and community.",
@@ -30,17 +28,11 @@
     }
   ],
   "milestones": [
-    { "label": "Born", "value": "1941" },
     { "label": "Title", "value": "Chief" },
     { "label": "Legacy", "value": "Faith • Family • Grace" },
     { "label": "Memory", "value": "Forever cherished" }
   ],
   "timeline": [
-    {
-      "year": "1941",
-      "title": "A cherished beginning",
-      "description": "She was born with grace, purpose, and a presence that would later bless generations."
-    },
     {
       "year": "1960s",
       "title": "A guiding light",
