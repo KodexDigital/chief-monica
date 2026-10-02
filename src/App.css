@@ -1832,6 +1832,177 @@ textarea {
   max-width: 1500px;
 }
 
+.tribute-message-list,
+.admin-tribute-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.tribute-message-card,
+.admin-tribute-card {
+  padding: 20px;
+  border: 1px solid rgba(217, 183, 121, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tribute-message-heading,
+.admin-tribute-heading,
+.admin-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.tribute-message-heading h4,
+.admin-tribute-heading h4 {
+  margin: 0;
+  color: #f5efe7;
+  font: 1.2rem var(--font-display);
+}
+
+.tribute-message-heading span,
+.admin-tribute-heading > div > p {
+  margin: 5px 0 0;
+  color: #d1af71;
+  font-size: 0.9rem;
+}
+
+.tribute-message-card > p,
+.admin-tribute-message {
+  margin: 14px 0 0;
+  color: #e8e3db;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.tribute-message-card time {
+  display: block;
+  margin-top: 12px;
+  color: #aaa39a;
+  font-size: 0.82rem;
+}
+
+.tribute-empty,
+.admin-local-warning,
+.tribute-notice,
+.admin-notice {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(217, 183, 121, 0.16);
+  border-radius: 12px;
+  color: #e8e3db;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tribute-notice--success {
+  border-color: rgba(127, 184, 144, 0.42);
+  color: #c8e5cf;
+}
+
+.tribute-notice--error {
+  border-color: rgba(220, 130, 117, 0.46);
+  color: #ffd2c9;
+}
+
+.admin-page {
+  display: grid;
+  gap: 22px;
+}
+
+.admin-heading {
+  align-items: center;
+  padding: 8px;
+}
+
+.admin-heading h2,
+.admin-auth-panel h2 {
+  margin: 8px 0 0;
+  color: #f7f2ee;
+  font: clamp(2rem, 4vw, 3rem) var(--font-display);
+}
+
+.admin-auth-panel {
+  display: grid;
+  gap: 18px;
+  width: min(100%, 620px);
+  margin: 0 auto;
+}
+
+.admin-auth-panel .tribute-form {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.admin-stats .summary-card {
+  min-width: 0;
+}
+
+.admin-tribute-card {
+  display: grid;
+  gap: 14px;
+}
+
+.admin-status {
+  flex: 0 0 auto;
+  padding: 4px 9px;
+  border: 1px solid rgba(217, 183, 121, 0.2);
+  border-radius: 999px;
+  color: #e9cf9b;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.admin-status--approved {
+  border-color: rgba(127, 184, 144, 0.42);
+  color: #c8e5cf;
+}
+
+.admin-tribute-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-delete-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(220, 130, 117, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: #ffd2c9;
+  font: inherit;
+  cursor: pointer;
+}
+
+.admin-delete-btn:hover {
+  background: rgba(220, 130, 117, 0.1);
+}
+
+@media (max-width: 640px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-heading,
+  .admin-tribute-heading {
+    align-items: flex-start;
+  }
+
+  .tribute-message-card,
+  .admin-tribute-card {
+    padding: 16px;
+  }
+}
+
 @media (max-width: 640px) {
   .footer-simple-row {
     padding-left: 18px;
