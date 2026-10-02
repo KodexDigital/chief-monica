@@ -1,6 +1,7 @@
 export interface StorySection {
   heading: string
   body: string
+  details?: string[]
 }
 
 export interface TimelineItem {
@@ -50,6 +51,7 @@ export interface MemorialProfile {
   title: string
   fullName: string
   shortName: string
+  chieftaincyTitle: string
   quote: string
   heroDescription: string
   intro: string

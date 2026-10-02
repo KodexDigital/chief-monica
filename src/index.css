@@ -1,15 +1,17 @@
 @import 'tailwindcss';
 
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  line-height: 1.65;
   font-weight: 400;
-  color: #2b211d;
-  background: #f4e9df;
+  color: #f5efe7;
+  background: #0d1114;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
 }
 
 * {
@@ -22,8 +24,29 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
   min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+p,
+li {
+  line-height: 1.7;
 }
 
 img {

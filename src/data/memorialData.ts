@@ -7,6 +7,12 @@ export const familyMembers = familyData as FamilyMember[]
 
 export const navigation = [
   { label: 'Home', href: '#home' },
+  { label: 'Her Story', href: '#story' },
+  { label: 'Life Journey', href: '#journey' },
+  { label: 'Family', href: '#family' },
+  { label: 'Memories', href: '#memories' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Memorial', href: '#memorial' },
+  { label: 'Tributes', href: '#tributes' },
   { label: 'Legacy', href: '#legacy' },
-  { label: 'Tributes', href: '#tribute' },
 ]
