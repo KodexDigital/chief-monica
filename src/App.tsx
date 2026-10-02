@@ -4,6 +4,7 @@ import './App.css'
 import HerStoryPage from './pages/HerStoryPage'
 import HomePage from './pages/HomePage'
 import MemoriesPage from './pages/MemoriesPage'
+import AdminPage from './pages/AdminPage'
 import TributesPage from './pages/TributesPage'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/memories" element={<MemoriesPage />} />
           <Route path="/tribute" element={<TributesPage />} />
           <Route path="/tributes" element={<TributesPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </BrowserRouter>
     </>
