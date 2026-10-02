@@ -32,10 +32,14 @@ const getMemberAvatarTone = (name: string) => {
 
 const viewNavigation = [
   { label: 'Home', view: 'home' },
-  { label: 'Biography', view: 'biography' },
+  { label: 'Her Story', view: 'story' },
+  { label: 'Life Journey', view: 'journey' },
+  { label: 'Family', view: 'family' },
+  { label: 'Memories', view: 'memories' },
   { label: 'Gallery', view: 'gallery' },
   { label: 'Memorial', view: 'memorial' },
-  { label: 'Tribute', view: 'tribute' },
+  { label: 'Tributes', view: 'tributes' },
+  { label: 'Legacy', view: 'legacy' },
 ] as const
 
 type ViewName = (typeof viewNavigation)[number]['view']
@@ -173,17 +177,17 @@ export default function PublicMemorialPage() {
             <p className="eyebrow elegant">In loving memory of</p>
             <h2>{memorialProfile.fullName}</h2>
 
-            <div className="hero-age-card" aria-label={`Her age at passing was great years`}>
-              <div className="hero-age-copy">
-                <p className="hero-age-label">Years of life</p>
-                <p className="hero-age-text">A life shaped by faith, family, and grace.</p>
+            <div className="hero-message-card" aria-label="Her enduring legacy">
+              <div className="hero-message-copy">
+                <p className="hero-message-label">Her enduring legacy</p>
+                <p className="hero-message-text">A life of faith, enterprise, and devotion to family and community.</p>
               </div>
             </div>
 
             <p>{memorialProfile.heroDescription}</p>
             <div className="hero-actions">
-              <button type="button" className="primary-btn" onClick={() => handleNavigate('biography')}>Read her biography</button>
-              <button type="button" className="secondary-btn" onClick={() => handleNavigate('tribute')}>Leave a tribute</button>
+              <button type="button" className="primary-btn" onClick={() => handleNavigate('story')}>Read her story</button>
+              <button type="button" className="secondary-btn" onClick={() => handleNavigate('tributes')}>Leave a tribute</button>
             </div>
 
             <div className="hero-notes" aria-label="Life values">
@@ -414,13 +418,13 @@ export default function PublicMemorialPage() {
     </>
   )
 
-  const renderBiographyView = () => (
+  const renderStoryView = () => (
     <>
-      {renderHeader('Biography navigation', memorialProfile.title)}
+      {renderHeader('Story navigation', memorialProfile.title)}
 
       <main className="page-shell story-shell">
         <section className="story-hero">
-          <p className="eyebrow elegant">Biography</p>
+          <p className="eyebrow elegant">Her story</p>
           <h2>{memorialProfile.fullName}</h2>
           <p>{memorialProfile.heroDescription}</p>
         </section>
@@ -449,33 +453,182 @@ export default function PublicMemorialPage() {
     </>
   )
 
-  const renderStoryView = () => (
+  const renderJourneyView = () => (
     <>
-      {renderHeader('Story navigation', memorialProfile.title)}
+      {renderHeader('Life journey navigation', memorialProfile.title)}
 
       <main className="page-shell story-shell">
         <section className="story-hero">
-          <p className="eyebrow elegant">Her story</p>
-          <h2>{memorialProfile.fullName}</h2>
-          <p>{memorialProfile.heroDescription}</p>
+          <p className="eyebrow elegant">Life journey</p>
+          <h2>Moments that shaped her legacy</h2>
+          <p>{memorialProfile.intro}</p>
         </section>
 
         <section className="story-archive">
           <div className="story-lead">
-            <p>{memorialProfile.intro}</p>
+            <p>
+              Her journey was marked by courage, faith, service, and enduring love. Each chapter reflected a life devoted to family, purpose, and compassion.
+            </p>
           </div>
 
           <div className="story-columns">
-            {memorialProfile.storySections.map((section) => (
-              <article key={section.heading} className="story-card">
-                <h3>{section.heading}</h3>
-                <p>{section.body}</p>
+            {memorialProfile.timeline.map((item) => (
+              <article key={`${item.year}-${item.title}`} className="story-card">
+                <h3>{item.year}</h3>
+                <p>
+                  <strong>{item.title}</strong>
+                </p>
+                <p>{item.description}</p>
               </article>
             ))}
           </div>
 
-          <div className="story-quote">
-            <p>“{memorialProfile.quote}”</p>
+          <div className="summary-strip" aria-label="Life highlights">
+            {memorialProfile.lifeHighlights.map((item) => (
+              <article key={item.title} className="summary-card">
+                <span>{item.title}</span>
+                <strong>{item.body}</strong>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      {renderFooter()}
+    </>
+  )
+
+  const renderFamilyView = () => (
+    <>
+      {renderHeader('Family navigation', memorialProfile.title)}
+
+      <main className="page-shell story-shell">
+        <section className="story-hero">
+          <p className="eyebrow elegant">Family</p>
+          <h2>The generations she shaped</h2>
+          <p>
+            Her legacy lives on through the people who carry her faith, values, and compassion forward.
+          </p>
+        </section>
+
+        <section className="story-archive">
+          <div className="story-lead">
+            <p>
+              The family tree reflects a living memorial of love, duty, and devotion. Each branch is a continuation of the grace and strength she gave to those she loved.
+            </p>
+          </div>
+
+          <div className="family-tree-grid">
+            <div className="family-tree-root-block">
+              {familyTreeByGeneration[0]?.members.map((member) => (
+                <article key={member.id} className="family-tree-node family-tree-node--root">
+                  <div className="family-tree-node-connector" aria-hidden="true" />
+                  <div
+                    className={`family-node-photo family-node-avatar family-node-avatar--${getMemberAvatarTone(member.name)}`}
+                    aria-label={`${member.name} portrait placeholder`}
+                  >
+                    {member.photo ? (
+                      <img src={member.photo} alt={member.name} className="family-node-image" />
+                    ) : (
+                      getMemberInitials(member.name)
+                    )}
+                  </div>
+                  <h4>{member.name}</h4>
+                  <span>{member.relationship}</span>
+                  <p>{member.note ?? '[To be confirmed]'}</p>
+                </article>
+              ))}
+            </div>
+
+            {familyTreeByGeneration.slice(1).map(({ generation, members }) => (
+              <div key={generation} className="family-generation-block">
+                <p className="family-generation-label">Generation {generation}</p>
+                <div className="family-generation-row">
+                  {members.map((member) => (
+                    <article
+                      key={member.id}
+                      className={`family-tree-node ${member.deceased ? 'family-tree-node--deceased' : ''}`}
+                    >
+                      <div className="family-tree-node-connector" aria-hidden="true" />
+                      {member.deceased && <span className="family-deceased-badge">Deceased</span>}
+                      <div
+                        className={`family-node-photo family-node-avatar family-node-avatar--${getMemberAvatarTone(member.name)}`}
+                        aria-label={`${member.name} portrait placeholder`}
+                      >
+                        {member.photo ? (
+                          <img src={member.photo} alt={member.name} className="family-node-image" />
+                        ) : (
+                          getMemberInitials(member.name)
+                        )}
+                      </div>
+                      <h4>{member.name}</h4>
+                      <span>{member.relationship}</span>
+                      {member.note ? <p>{member.note}</p> : null}
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="family-grid">
+            {memorialProfile.familyHighlights.map((item) => (
+              <article key={item.label} className="family-card">
+                <span>{item.label}</span>
+                <p>{item.value}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      {renderFooter()}
+    </>
+  )
+
+  const renderMemoriesView = () => (
+    <>
+      {renderHeader('Memories navigation', memorialProfile.title)}
+
+      <main className="page-shell gallery-shell">
+        <section className="story-hero">
+          <p className="eyebrow elegant">Memories</p>
+          <h2>Stories carried in the heart</h2>
+        </section>
+
+        <div className="gallery-grid full-gallery-grid">
+          {[...memorialProfile.gallery, ...memoryGallery].map((item) => (
+            <article key={`${item.title}-${item.caption}`} className="gallery-card gallery-view-card">
+              <button
+                type="button"
+                className="gallery-trigger"
+                onClick={() => setSelectedImage(item)}
+                aria-label={`Open image for ${item.title}`}
+              >
+                <div
+                  className="gallery-image"
+                  style={{
+                    backgroundImage: `linear-gradient(180deg, rgba(11, 13, 15, 0.08), rgba(11, 13, 15, 0.82)), url('${item.image}')`,
+                  }}
+                />
+              </button>
+              <div className="gallery-content">
+                <h4>{item.title}</h4>
+                <p>{item.caption}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <section className="tribute-panel memorial-tribute-panel">
+          <SectionHeader eyebrow="Shared remembrance" title="Words that still echo" />
+          <div className="tribute-notes">
+            {memorialProfile.notes.map((note) => (
+              <article key={note.author} className="tribute-note">
+                <span>{note.author}</span>
+                <p>“{note.text}”</p>
+              </article>
+            ))}
           </div>
         </section>
       </main>
@@ -586,13 +739,13 @@ export default function PublicMemorialPage() {
     </>
   )
 
-  const renderTributeView = () => (
+  const renderTributesView = () => (
     <>
-      {renderHeader('Tribute navigation', memorialProfile.title)}
+      {renderHeader('Tributes navigation', memorialProfile.title)}
 
       <main className="page-shell memorial-shell">
         <section className="story-hero">
-          <p className="eyebrow elegant">Tribute</p>
+          <p className="eyebrow elegant">Tributes</p>
           <h2>Words of love and remembrance</h2>
           <p>
             A place to honour her life with memories, prayers, and messages that keep her warmth alive in the hearts of her family and loved ones.
@@ -637,6 +790,52 @@ export default function PublicMemorialPage() {
     </>
   )
 
+  const renderLegacyView = () => (
+    <>
+      {renderHeader('Legacy navigation', memorialProfile.title)}
+
+      <main className="page-shell story-shell">
+        <section className="story-hero">
+          <p className="eyebrow elegant">Legacy</p>
+          <h2>The values she planted continue to grow</h2>
+          <p>
+            Her life remains a blessing in the hearts of her family and community. Her example shaped the people around her and left behind a lasting legacy of compassion, dignity, and love.
+          </p>
+        </section>
+
+        <section className="story-archive">
+          <div className="story-lead">
+            <p>{memorialProfile.intro}</p>
+          </div>
+
+          <div className="story-columns">
+            {memorialProfile.lifeHighlights.map((item) => (
+              <article key={item.title} className="story-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="family-grid">
+            {memorialProfile.familyHighlights.map((item) => (
+              <article key={item.label} className="family-card">
+                <span>{item.label}</span>
+                <p>{item.value}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="story-quote">
+            <p>“{memorialProfile.quote}”</p>
+          </div>
+        </section>
+      </main>
+
+      {renderFooter()}
+    </>
+  )
+
   const spaceParticles = Array.from({ length: 26 }, (_, index) => (
     <span
       key={index}
@@ -653,10 +852,14 @@ export default function PublicMemorialPage() {
     <div className="memorial-page">
       <div className="space-particles" aria-hidden="true">{spaceParticles}</div>
       {activeView === 'home' && renderHomeView()}
-      {activeView === 'biography' && renderBiographyView()}
+      {activeView === 'story' && renderStoryView()}
+      {activeView === 'journey' && renderJourneyView()}
+      {activeView === 'family' && renderFamilyView()}
+      {activeView === 'memories' && renderMemoriesView()}
       {activeView === 'gallery' && renderGalleryView()}
       {activeView === 'memorial' && renderMemorialView()}
-      {activeView === 'tribute' && renderTributeView()}
+      {activeView === 'tributes' && renderTributesView()}
+      {activeView === 'legacy' && renderLegacyView()}
 
       {selectedImage && (
         <div className="lightbox-backdrop" onClick={() => setSelectedImage(null)}>

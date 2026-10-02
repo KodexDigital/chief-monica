@@ -11,7 +11,7 @@ import image10 from '../assets/memories/DSC_0073.JPG'
 import image11 from '../assets/memories/DSC_0081.JPG'
 import type { GalleryItem } from '../types/memorial'
 
-export const memoryGallery: GalleryItem[] = [
+const originalMemories: GalleryItem[] = [
   {
     title: 'A cherished gathering',
     caption: 'A joyful family moment surrounded by colour, tradition, and togetherness.',
@@ -68,3 +68,57 @@ export const memoryGallery: GalleryItem[] = [
     image: image11,
   },
 ]
+
+const addedPhotoDetails = [
+  { filename: 'dada_ma.jpg', title: 'Together in blue', caption: 'A seated portrait of two loved ones sharing a quiet moment in coordinated blue attire.' },
+  { filename: 'IMG-20260905-WA0008.jpg', title: 'A loving embrace', caption: 'A younger family member leans in to embrace Monica as they sit together at home.' },
+  { filename: 'IMG-20260905-WA0009.jpg', title: 'Close by her side', caption: 'A child sits beside Monica, sharing a gentle moment captured at home.' },
+  { filename: 'IMG-20260905-WA0010.jpg', title: 'A portrait in colour', caption: 'Monica sits for a portrait in a vivid patterned dress and matching headwrap.' },
+  { filename: 'IMG-20260905-WA0011.jpg', title: 'Gathered around her', caption: 'Family members gather close for a relaxed group portrait.' },
+  { filename: 'IMG-20260905-WA0014.jpg', title: 'A portrait together', caption: 'Monica and a loved one sit side by side in formal, colourful clothing.' },
+  { filename: 'IMG-20260905-WA0015.jpg', title: 'A family gathering', caption: 'Adults and children come together outside for a family photograph.' },
+  { filename: 'IMG-20260905-WA0016.jpg', title: 'Side by side', caption: 'Monica and a family member stand together for a portrait outdoors.' },
+  { filename: 'IMG-20260905-WA0021.jpg', title: 'Among her loved ones', caption: 'A group portrait brings several generations together in a lively outdoor setting.' },
+  { filename: 'IMG-20260905-WA0023.jpg', title: 'A moment with family', caption: 'Monica is pictured with relatives during an outdoor family gathering.' },
+  { filename: 'IMG-20260905-WA0025.jpg', title: 'A joyful gathering', caption: 'Relatives gather around Monica, with a young child bringing a playful moment to the photograph.' },
+  { filename: 'IMG-20260905-WA0027.jpg', title: 'Together outdoors', caption: 'A family group pauses for a photograph, with Monica at the centre.' },
+  { filename: 'IMG-20260905-WA0028.jpg', title: 'A family portrait', caption: 'Loved ones stand together for another portrait during the outdoor gathering.' },
+  { filename: 'IMG-20260905-WA0029.jpg', title: 'Smiles in good company', caption: 'A candid group portrait captures a warm moment with family.' },
+  { filename: 'IMG_0092.jpg', title: 'A seated portrait', caption: 'Monica and a companion sit together in ceremonial dress among gathered guests.' },
+  { filename: 'IMG_0093.jpg', title: 'Guests gathered', caption: 'Friends and family share a gathering beneath an open-sided shelter.' },
+  { filename: 'IMG_0115.jpg', title: 'A moment side by side', caption: 'Two women stand together for a portrait in colourful patterned clothing.' },
+  { filename: 'IMG_0123.jpg', title: 'A day among family', caption: 'Monica appears among relatives and guests during a family gathering.' },
+  { filename: 'IMG_0152.jpg', title: 'In the company of loved ones', caption: 'A gathering surrounds Monica as family and guests share the occasion.' },
+  { filename: 'IMG_0154.jpg', title: 'A gathering in celebration', caption: 'Monica is pictured with loved ones at a gathering filled with guests.' },
+  { filename: 'IMG_0169.jpg', title: 'A lively celebration', caption: 'Guests gather close as the celebration unfolds around Monica.' },
+  { filename: 'IMG_0171.jpg', title: 'Among family and friends', caption: 'Monica and a companion are pictured with a large gathering of guests.' },
+  { filename: 'IMG_0172.jpg', title: 'A moment in the crowd', caption: 'A candid view of Monica among family and friends at a busy gathering.' },
+  { filename: 'IMG_0180.jpg', title: 'A walk through the gathering', caption: 'Monica moves through the gathering as family and guests look on.' },
+  { filename: 'IMG_3812.jpeg', title: 'An archival portrait', caption: 'A preserved photograph shows Monica and a companion together outdoors.' },
+  { filename: 'IMG_3813.jpeg', title: 'A portrait in traditional dress', caption: 'Monica is pictured in traditional attire beside a loved one.' },
+  { filename: 'IMG_3815.jpeg', title: 'A composed portrait', caption: 'A formal portrait preserves Monica in patterned traditional clothing.' },
+  { filename: 'IMG_3817.jpeg', title: 'A moment with a companion', caption: 'Monica and a companion pose together in a family photograph.' },
+  { filename: 'IMG_3820.jpeg', title: 'A portrait remembered', caption: 'A preserved portrait captures Monica in a white blouse and blue wrapper.' },
+  { filename: 'IMG_3823_1.jpeg', title: 'Together in a family portrait', caption: 'Monica is pictured beside a loved one in a carefully preserved photograph.' },
+  { filename: 'IMG_3824.jpeg', title: 'A portrait from the archive', caption: 'A family photograph preserves Monica with a companion in traditional attire.' },
+  { filename: 'memory1.jpg', title: 'Three generations together', caption: 'Monica stands between two younger family members for a studio portrait.' },
+  { filename: 'memory2.jpg', title: 'A formal family gathering', caption: 'Monica is pictured with relatives dressed for a special family occasion.' },
+]
+
+const memoryPhotoUrls = import.meta.glob<string>('../assets/memories/*.{jpg,JPG,jpeg}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+})
+
+const addedMemories: GalleryItem[] = addedPhotoDetails.map(({ filename, ...details }) => {
+  const image = memoryPhotoUrls[`../assets/memories/${filename}`]
+
+  if (!image) {
+    throw new Error(`Memory photo not found: ${filename}`)
+  }
+
+  return { ...details, image }
+})
+
+export const memoryGallery: GalleryItem[] = [...originalMemories, ...addedMemories]

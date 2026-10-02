@@ -1,6 +1,6 @@
 # Product overview
 
-This is a static memorial website for Chief Mrs. Monica Edumongren Zisine Otoro, 1941 — 2026. The website is intended to preserve her legacy, warm family memories, and the values she embodied.
+This is a static memorial website for Chief Mrs. Monica Edumuegren Gabriel Otoro, Eyoro Elekpukpu of Seimbiri Kingdom. The website is intended to preserve her biography, family memories, and legacy of faith, enterprise, devotion, and community service.
 
 ## Goals
 

@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import PublicMemorialPage from './pages/PublicMemorialPage'
+import HerStoryPage from './pages/HerStoryPage'
+import HomePage from './pages/HomePage'
+import MemoriesPage from './pages/MemoriesPage'
+import TributesPage from './pages/TributesPage'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -21,7 +25,16 @@ function App() {
         <p>In loving memory</p>
       </div>
 
-      <PublicMemorialPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/biography" element={<HerStoryPage />} />
+          <Route path="/story" element={<HerStoryPage />} />
+          <Route path="/memories" element={<MemoriesPage />} />
+          <Route path="/tribute" element={<TributesPage />} />
+          <Route path="/tributes" element={<TributesPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

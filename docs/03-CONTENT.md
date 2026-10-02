@@ -2,15 +2,21 @@
 
 ## Verified information
 
-- Name: Chief Mrs. Monica Edumongren Zisine Otoro
-- Life span: 1941 — 2026
-- Title: Chief Mrs. Monica Edumongren Zisine Otoro
-- Core legacy: faith, family, grace, wisdom, and unconditional love
+- Name: Chief Mrs. Monica Edumuegren Gabriel Otoro
+- Chieftaincy title: Eyoro Elekpukpu of Seimbiri Kingdom
+- Born in Ogodobiri Town, Bomadi Local Government Area, Delta State
+- Paternal and maternal roots: Oturu and Ayagbene Quarters of Ogodobiri
+- Parents: Mr. and Mrs. Younburu Terebo; youngest of four children
+- Marriage: Chief Gabriel Zisine Otoro of the Eyoloware family in Enekorogha
+- Children: nine; five daughters, three sons, and one pregnancy ending in miscarriage
+- Work: seamstress, local gin producer, farmer, and fisherwoman
+- Catholic pious societies: Legion of Mary; Sacred Heart of Jesus; Association of Mary, Queen of All Hearts
+- Passed peacefully on June 26, 2026, at 4:40 AM while on the way to hospital
+- Core legacy: faith, enterprise, family devotion, compassion, and community service
 
 ## Information still being confirmed
 
 - Full family tree details
-- Exact birth and passing dates beyond the year
 - Specific community and historical milestones
 - Full list of family members for publication
 

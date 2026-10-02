@@ -1,6 +1,6 @@
 # Chief Mrs. Monica Memorial Website
 
-A respectful, static memorial website honoring Chief Mrs. Monica Edumongren Zisine Otoro, 1941 — 2026.
+A respectful, static memorial website honoring Chief Mrs. Monica Edumuegren Gabriel Otoro, Eyoro Elekpukpu of Seimbiri Kingdom.
 
 ## Overview
 
@@ -57,6 +57,8 @@ Because this project is purely static, deployment is simple:
 1. Run the production build
 2. Upload the generated dist folder to a static host
 3. Keep the source files, media, and content together for future updates
+
+Before publishing, replace `https://example.com` in `index.html`, `robots.txt`, and `sitemap.xml` with the site's real HTTPS domain. The canonical URL, search indexing, and social preview image all depend on this domain being correct.
 
 ## Important note
 
