@@ -36,6 +36,11 @@ export interface FuneralDetail {
   details: string
 }
 
+export interface BurialProgrammeEvent {
+  location: string
+  date: string
+}
+
 export interface FamilyMember {
   id: string
   name: string
@@ -50,16 +55,20 @@ export interface FamilyMember {
 export interface MemorialProfile {
   title: string
   fullName: string
+  biographyTitle?: string
   shortName: string
   chieftaincyTitle: string
   quote: string
   heroDescription: string
   intro: string
+  compiledBy?: string
   storySections: StorySection[]
   milestones: Array<{ label: string; value: string }>
   timeline: TimelineItem[]
   values: string[]
   lifeHighlights: LifeHighlight[]
+  burialProgram: BurialProgrammeEvent[]
+  musicAlbumId?: string
   funeralInfo: FuneralDetail[]
   gallery: GalleryItem[]
   notes: MemorialNote[]

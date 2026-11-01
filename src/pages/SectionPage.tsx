@@ -72,7 +72,7 @@ export default function SectionPage({ page }: { page: SectionPageKey }) {
         <main className={pageClass}>
           <section className="story-hero section-intro">
             <p className="eyebrow elegant">Biography</p>
-            <h2>{memorialProfile.fullName}</h2>
+            <h2>{memorialProfile.biographyTitle ?? memorialProfile.fullName}</h2>
             <p className="story-honorific">{memorialProfile.chieftaincyTitle}</p>
             <p>Welcome to her biography — a thoughtful reflection of her life, values, and the love she gave to family and community.</p>
           </section>
@@ -98,6 +98,9 @@ export default function SectionPage({ page }: { page: SectionPageKey }) {
 
             <div className="story-quote feature-panel">
               <p>“{memorialProfile.quote}”</p>
+              {memorialProfile.compiledBy && (
+                <p className="story-compiled-by">Compiled by: {memorialProfile.compiledBy}</p>
+              )}
             </div>
           </section>
         </main>

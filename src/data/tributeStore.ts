@@ -14,6 +14,21 @@ const ADMIN_SALT_KEY = 'monica-memorial-admin-salt'
 const ADMIN_HASH_KEY = 'monica-memorial-admin-hash'
 const ADMIN_SESSION_KEY = 'monica-memorial-admin-session'
 
+export function subscribeToTributes(onChange: (entries: TributeEntry[]) => void) {
+  const syncEntries = () => onChange(readTributes())
+  const handleStorage = (event: StorageEvent) => {
+    if (event.key === TRIBUTES_KEY || event.key === null) syncEntries()
+  }
+
+  window.addEventListener('storage', handleStorage)
+  window.addEventListener('focus', syncEntries)
+
+  return () => {
+    window.removeEventListener('storage', handleStorage)
+    window.removeEventListener('focus', syncEntries)
+  }
+}
+
 function isTributeEntry(value: unknown): value is TributeEntry {
   if (!value || typeof value !== 'object') return false
   const entry = value as Partial<TributeEntry>

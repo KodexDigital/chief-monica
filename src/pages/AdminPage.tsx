@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import {
   createAdminPassphrase,
   hasAdminPassphrase,
@@ -6,6 +6,7 @@ import {
   readTributes,
   saveTributes,
   setAdminSessionActive,
+  subscribeToTributes,
   verifyAdminPassphrase,
   type TributeEntry,
   type TributeStatus,
@@ -17,6 +18,8 @@ export default function AdminPage() {
   const [isLoggedIn, setIsLoggedIn] = useState(isAdminSessionActive)
   const [entries, setEntries] = useState<TributeEntry[]>(readTributes)
   const [notice, setNotice] = useState('')
+
+  useEffect(() => subscribeToTributes(setEntries), [])
 
   async function handleSetup(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()

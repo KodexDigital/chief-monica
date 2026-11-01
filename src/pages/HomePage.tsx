@@ -1,5 +1,6 @@
 import { MemorialLayout } from './MemorialLayout'
 import heroImage from '../assets/granny.png'
+import MemorialAlbumPlayer from '../components/MemorialAlbumPlayer'
 import { familyMembers, memorialProfile } from '../data/memorialData'
 import { memoryGallery } from '../data/memories'
 
@@ -84,6 +85,8 @@ export default function HomePage() {
           <p className="eyebrow">A life of grace</p>
           <blockquote>{memorialProfile.quote}</blockquote>
         </section>
+
+        <MemorialAlbumPlayer />
 
         <section className="summary-strip" aria-label="Life summary" data-reveal>
           {memorialProfile.milestones.map((item) => (
