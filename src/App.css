@@ -2470,6 +2470,41 @@ textarea {
 }
 
 @media (max-width: 640px) {
+  .program-countdown {
+    width: min(100% - 18px, 1180px);
+    margin-top: 10px;
+    padding: 17px 14px;
+    border-radius: 18px;
+  }
+
+  .program-countdown-events {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .program-countdown-event {
+    padding: 12px;
+  }
+
+  .countdown-units {
+    gap: 5px;
+  }
+
+  .countdown-unit {
+    min-width: 0;
+    padding: 5px 1px 4px;
+  }
+
+  .countdown-value {
+    font-size: clamp(1.05rem, 5vw, 1.25rem);
+  }
+
+  .countdown-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+
   .topbar,
   .page-shell,
   .memorial-footer {
