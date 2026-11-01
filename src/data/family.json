@@ -1,7 +1,7 @@
 [
   {
     "id": "chief-monica",
-    "name": "Chief Mrs. Monica Edumuegren Gabriel Otoro",
+    "name": "Chief Mrs. Monica Edumuegren Otoro",
     "relationship": "Grandmother",
     "generation": 1,
     "parentId": null,
@@ -315,6 +315,7 @@
     "relationship": "Grandson",
     "generation": 3,
     "parentId": "lucy",
+    "photo":"images/family_tree/yerin.png",
     "note": "Son of Lucy"
   },
   {
@@ -411,12 +412,13 @@
     "note": "Son of Timipre"
   },
   {
-    "id": "brigh-child-1",
-    "name": "Child 1",
-    "relationship": "Great-Grandchild",
+    "id": "prince",
+    "name": "Prince",
+    "relationship": "Great-Grandson",
     "generation": 4,
     "parentId": "bright",
-    "note": "Child of Bright"
+    "photo":"images/family_tree/prince_bright.png",
+    "note": "Son of Bright"
   },
   {
     "id": "brigh-child-2",

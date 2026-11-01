@@ -1,12 +1,14 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { memorialProfile } from '../data/memorialData'
-import { readTributes, saveTributes, type TributeEntry } from '../data/tributeStore'
+import { readTributes, saveTributes, subscribeToTributes, type TributeEntry } from '../data/tributeStore'
 import { MemorialLayout } from './MemorialLayout'
 
 export default function TributesPage() {
   const [entries, setEntries] = useState<TributeEntry[]>(readTributes)
   const [notice, setNotice] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
   const approvedEntries = entries.filter((entry) => entry.status === 'approved')
+
+  useEffect(() => subscribeToTributes(setEntries), [])
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -39,7 +41,7 @@ export default function TributesPage() {
     setEntries(updatedEntries)
     setNotice({
       type: 'success',
-      text: `Thank you, ${name}. Your tribute has been received and is awaiting family review.`,
+      text: `Thank you, ${name}. Your tribute is saved on this browser and is awaiting family review here.`,
     })
     form.reset()
   }
@@ -61,20 +63,22 @@ export default function TributesPage() {
           <div className="tribute-message-list">
             {memorialProfile.notes.map((note) => (
               <article key={`family-${note.author}`} className="tribute-message-card">
+                <span className="tribute-message-ornament" aria-hidden="true">“</span>
                 <div className="tribute-message-heading">
                   <h4>{note.author}</h4>
                   <span>Family remembrance</span>
                 </div>
-                <p>“{note.text}”</p>
+                <blockquote className="tribute-message-quote">{note.text}</blockquote>
               </article>
             ))}
             {approvedEntries.map((entry) => (
               <article key={entry.id} className="tribute-message-card">
+                <span className="tribute-message-ornament" aria-hidden="true">“</span>
                 <div className="tribute-message-heading">
                   <h4>{entry.name}</h4>
                   <span>{entry.relationship}</span>
                 </div>
-                <p>“{entry.message}”</p>
+                <blockquote className="tribute-message-quote">{entry.message}</blockquote>
                 <time dateTime={entry.submittedAt}>{new Intl.DateTimeFormat(undefined, { dateStyle: 'long' }).format(new Date(entry.submittedAt))}</time>
               </article>
             ))}
@@ -89,6 +93,9 @@ export default function TributesPage() {
             <p className="eyebrow">Share a memory</p>
             <h3 id="leave-tribute-title">Leave a tribute</h3>
           </div>
+          <p className="tribute-storage-note">
+            Tributes are saved in this browser only and are not shared across devices or with other visitors.
+          </p>
           <form className="tribute-form" onSubmit={handleSubmit}>
             <div className="field-row">
               <label htmlFor="tribute-name">

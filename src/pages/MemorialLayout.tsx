@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { memorialProfile } from '../data/memorialData'
+import ProgramCountdown from '../components/ProgramCountdown'
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -53,6 +54,8 @@ export function MemorialLayout({ children }: { children: ReactNode }) {
           />
         ))}
       </div>
+
+      <ProgramCountdown />
 
       <header className="topbar">
         <div className="brand-block">
