@@ -168,7 +168,7 @@ export default function SectionPage({ page }: { page: SectionPageKey }) {
               <p>The family tree reflects a living memorial of love, duty, and devotion. Each branch is a continuation of the grace and strength she gave to those she loved.</p>
             </div>
 
-            <div className="family-tree-grid family-tree-grid--page">
+            <div className="family-tree-grid family-tree-grid--page" data-reveal>
               <div className="family-tree-root-block">
                 {familyTreeByGeneration[0]?.members.map((member) => (
                   <article key={member.id} className="family-tree-node family-tree-node--root">
