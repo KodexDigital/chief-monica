@@ -31,7 +31,7 @@ export function MemorialLayout({ children }: { children: ReactNode }) {
           }
         })
       },
-      { threshold: 0.12, rootMargin: '0px 0px -30px 0px' },
+      { threshold: 0, rootMargin: '0px 0px -30px 0px' },
     )
 
     revealElements.forEach((element) => observer.observe(element))

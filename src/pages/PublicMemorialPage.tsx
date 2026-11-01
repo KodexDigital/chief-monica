@@ -98,7 +98,7 @@ export default function PublicMemorialPage() {
         })
       },
       {
-        threshold: 0.12,
+        threshold: 0,
         rootMargin: '0px 0px -30px 0px',
       },
     )

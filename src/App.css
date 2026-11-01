@@ -1758,6 +1758,48 @@ section[id] {
   gap: 22px;
 }
 
+.family-tree-section .family-tree-grid > *,
+.family-tree-grid--page[data-reveal] > * {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.family-tree-section.is-visible .family-tree-grid > *,
+.family-tree-grid--page.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.family-tree-section.is-visible .family-tree-grid > :nth-child(2),
+.family-tree-grid--page.is-visible > :nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.family-tree-section.is-visible .family-tree-grid > :nth-child(3),
+.family-tree-grid--page.is-visible > :nth-child(3) {
+  transition-delay: 0.24s;
+}
+
+.family-tree-section.is-visible .family-tree-grid > :nth-child(4),
+.family-tree-grid--page.is-visible > :nth-child(4) {
+  transition-delay: 0.36s;
+}
+
+.family-tree-section.is-visible .family-tree-grid > :nth-child(5),
+.family-tree-grid--page.is-visible > :nth-child(5) {
+  transition-delay: 0.48s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .family-tree-section .family-tree-grid > *,
+  .family-tree-grid--page[data-reveal] > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .family-tree-root-block {
   position: relative;
   display: flex;
